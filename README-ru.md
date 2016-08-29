@@ -1,5 +1,5 @@
 unicon
-==========
+======
 Равноконтрастная светлая и тёмная цветовая схема для Vim.
 
 Эта цветовая схема создана под влиянием [solarized][], [gruvbox][] и [lucius][].
@@ -20,8 +20,8 @@ unicon
 Скриншоты
 ---------
 **Light**
-![Unicon Light](https://cloud.githubusercontent.com/assets/21138800/18032483/fe2e44e6-6d16-11e6-9a4f-54bfeec8f4e2.png)
+![Unicon Light](https://cloud.githubusercontent.com/assets/21138800/18059807/cbd13e0c-6e2b-11e6-98da-e3a594f5b6b6.png)
 
 **Dark**
-![Unicon Dark](https://cloud.githubusercontent.com/assets/21138800/18032492/291359a8-6d17-11e6-9ac2-1815b9f90381.png)
+![Unicon Dark](https://cloud.githubusercontent.com/assets/21138800/18059809/cd859194-6e2b-11e6-910a-05e30bdc7f4d.png)
 

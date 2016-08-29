@@ -144,6 +144,7 @@ call s:HL('Normal', s:base6, s:base1)
 call s:HL('Comment', s:base4)
 call s:HL('Constant', s:violet)
 call s:HL('String', s:yellow)
+call s:HL('Character', s:yellow)
 call s:HL('Identifier', s:green)
 call s:HL('Statement', s:blue)
 call s:HL('PreProc', s:cyan)
@@ -199,7 +200,7 @@ call s:HL('CursorLineNr', s:base7, s:base1, 'bold')
 call s:HL('ColorColumn', 'NONE', s:base2)
 call s:HL('Cursor', s:base1, s:base8)
 call s:HL('lCursor', s:base1, s:magenta)
-call s:HL('MatchParen', s:magenta, s:base3, 'bold')
+call s:HL('MatchParen', s:base8, s:base3, 'bold')
 
 "}}}
 " Reread colorscheme when vim is transferring from terminal to gui mode.
