@@ -60,13 +60,13 @@ if &background == "light"
         let s:base6        = "237"
         let s:base7        = "235"
         let s:base8        = "233"
-        let s:red          = "125"
-        let s:orange       = "94"
+        let s:red          = "161"
+        let s:orange       = "130"
         let s:yellow       = "58"
         let s:green        = "22"
         let s:cyan         = "23"
-        let s:blue         = "25"
-        let s:violet       = "91"
+        let s:blue         = "26"
+        let s:violet       = "92"
         let s:magenta      = "127"
     endif
 " if &background == "dark"
@@ -100,11 +100,11 @@ else
         let s:base7       = "188"
         let s:base8       = "255"
         let s:red         = "168"
-        let s:orange      = "137"
-        let s:yellow      = "101"
+        let s:orange      = "173"
+        let s:yellow      = "143"
         let s:green       = "71"
-        let s:cyan        = "72"
-        let s:blue        = "68"
+        let s:cyan        = "73"
+        let s:blue        = "69"
         let s:violet      = "141"
         let s:magenta     = "170"
     endif
@@ -187,9 +187,9 @@ call s:HL('SpellBad', 'NONE', 'NONE', 'undercurl', s:red)
 call s:HL('SpellCap', 'NONE', 'NONE', 'undercurl', s:violet)
 call s:HL('SpellRare', 'NONE', 'NONE', 'undercurl', s:cyan)
 call s:HL('SpellLocal', 'NONE', 'NONE', 'undercurl', s:yellow)
-call s:HL('Pmenu', s:base1, s:base4)
-call s:HL('PmenuSel', s:base6, s:base2)
-call s:HL('PmenuSbar', 'NONE', s:base2)
+call s:HL('Pmenu', s:base7, s:base3)
+call s:HL('PmenuSel', s:base1, s:base5)
+call s:HL('PmenuSbar', 'NONE', s:base5)
 call s:HL('PmenuThumb', 'NONE', s:base7)
 call s:HL('TabLine', s:base5, s:base2, 'underline')
 call s:HL('TabLineFill', s:base5, s:base2, 'underline')
@@ -200,7 +200,7 @@ call s:HL('CursorLineNr', s:base7, s:base1, 'bold')
 call s:HL('ColorColumn', 'NONE', s:base2)
 call s:HL('Cursor', s:base1, s:base8)
 call s:HL('lCursor', s:base1, s:magenta)
-call s:HL('MatchParen', s:base8, s:base3, 'bold')
+call s:HL('MatchParen', s:base7, s:base3, 'bold')
 
 "}}}
 " Reread colorscheme when vim is transferring from terminal to gui mode.
