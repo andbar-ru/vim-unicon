@@ -140,7 +140,9 @@ endfunction
 
 " Basic highlighting: {{{
 " ---------------------------------------------------------------------
+let s:bg=&background
 call s:HL('Normal', s:base6, s:base1)
+let &background=s:bg  " workaround of bug https://groups.google.com/forum/#!msg/vim_dev/afPqwAFNdrU/nqh6tOM87QUJ
 call s:HL('Comment', s:base4)
 call s:HL('Constant', s:violet)
 call s:HL('String', s:yellow)
