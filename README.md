@@ -17,10 +17,31 @@ Differences from solarized:
 [gruvbox]: https://github.com/morhetz/gruvbox
 [lucius]: https://github.com/jonathanfilip/vim-lucius
 
+Installation
+------------
+1. Copy colors/unicon.vim to directory ~/.vim/colors/ or better use any of plugin manager: [vim-plug][], [NeoBundle][], [Vundle][] или [Pathogen][].
+
+2. Append to ~/.vimrc:
+   ```
+   set t_Co=256
+   set background=light  " или dark
+   colorscheme unicon
+   ```
+   You can toggle between light and dark variants using commands:
+   ```
+   :set background=light
+   :set background-dark
+   ```
+
+[vim-plug]: https://github.com/junegunn/vim-plug
+[NeoBundle]: https://github.com/Shougo/neobundle.vim
+[Vundle]: https://github.com/gmarik/Vundle.vim
+[Pathogen]: https://github.com/tpope/vim-pathogen
+
 Screenshots
 -----------
 **Light**
-![Unicon Light](https://cloud.githubusercontent.com/assets/21138800/18059807/cbd13e0c-6e2b-11e6-98da-e3a594f5b6b6.png)
+![unicon_light](https://cloud.githubusercontent.com/assets/21138800/18610934/2a6c690a-7d3b-11e6-9385-78f13b550082.png)
 
 **Dark**
-![Unicon Dark](https://cloud.githubusercontent.com/assets/21138800/18059809/cd859194-6e2b-11e6-910a-05e30bdc7f4d.png)
+![unicon_dark](https://cloud.githubusercontent.com/assets/21138800/18610936/36dba732-7d3b-11e6-97f8-c1a5d7a67a79.png)
