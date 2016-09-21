@@ -60,13 +60,13 @@ if &background == "light"
         let s:base6        = "237"
         let s:base7        = "235"
         let s:base8        = "233"
-        let s:red          = "161"
+        let s:red          = "124"
         let s:orange       = "130"
         let s:yellow       = "58"
         let s:green        = "22"
         let s:cyan         = "23"
         let s:blue         = "62"
-        let s:violet       = "57"
+        let s:violet       = "56"
         let s:magenta      = "127"
     endif
 " if &background == "dark"
@@ -99,13 +99,13 @@ else
         let s:base6       = "250"
         let s:base7       = "188"
         let s:base8       = "255"
-        let s:red         = "168"
+        let s:red         = "204"
         let s:orange      = "173"
         let s:yellow      = "143"
         let s:green       = "71"
         let s:cyan        = "73"
-        let s:blue        = "105"
-        let s:violet      = "141"
+        let s:blue        = "69"
+        let s:violet      = "140"
         let s:magenta     = "170"
     endif
 endif
@@ -142,7 +142,7 @@ endfunction
 " ---------------------------------------------------------------------
 let s:bg=&background
 call s:HL('Normal', s:base6, s:base1)
-let &background=s:bg  " workaround of bug https://groups.google.com/forum/#!msg/vim_dev/afPqwAFNdrU/nqh6tOM87QUJ
+let &background=s:bg  " workaround for bug https://groups.google.com/forum/#!msg/vim_dev/afPqwAFNdrU/nqh6tOM87QUJ
 call s:HL('Comment', s:base4)
 call s:HL('Constant', s:violet)
 call s:HL('String', s:yellow)
