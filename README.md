@@ -23,8 +23,7 @@ Installation
 
 2. Append to ~/.vimrc:
    ```
-   set t_Co=256
-   set background=light  " или dark
+   set background=light  " or dark
    colorscheme unicon
    ```
    You can toggle between light and dark variants using commands:
@@ -37,6 +36,23 @@ Installation
 [NeoBundle]: https://github.com/Shougo/neobundle.vim
 [Vundle]: https://github.com/gmarik/Vundle.vim
 [Pathogen]: https://github.com/tpope/vim-pathogen
+
+256 colors in terminal
+----------------------
+Unicon supports 256-color terminals, but palette doesn't provide uniform contrast because of limited choice of colors. I don't know how to determine reliably whether terminal supports 256 colors. `tput colors` command should return number of available colors in terminal but it depends on env variable $TERM. Even though terminal supply 256-color palette but $TERM does't denote that `tput colors` will return number less that 256. To fix this you can add to variable $TERM '-256color', for example with this line in ~/.bashrc:
+```
+if [[ "$TERM" =~ "term" ]]; then
+    export TERM="xterm-256color"
+fi
+```
+or this line in ~/.vimrc:
+```
+set t_Co=256
+```
+You can know whether your terminal supports 256 colors using special test scripts like [show-all-256-colors.py][] or [terminalcolors.py][].
+
+[show-all-256-colors.py]: https://gist.github.com/mgedmin/2762225
+[terminalcolors.py]: https://raw.githubusercontent.com/incitat/eran-dotfiles/master/bin/terminalcolors.py
 
 Screenshots
 -----------

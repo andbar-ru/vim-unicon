@@ -23,7 +23,6 @@ unicon
 
 2. Добавьте в ~/.vimrc:
    ```
-   set t_Co=256
    set background=light  " или dark
    colorscheme unicon
    ```
@@ -37,6 +36,23 @@ unicon
 [NeoBundle]: https://github.com/Shougo/neobundle.vim
 [Vundle]: https://github.com/gmarik/Vundle.vim
 [Pathogen]: https://github.com/tpope/vim-pathogen
+
+256 цветов в терминале
+----------------------
+Unicon поддерживает 256-цветные терминалы, правда палитра для терминалов не обеспечивает ровный контраст, так как набор возможных цветов в терминале ограничен. Я не знаю, как из скрипта можно надёжно определить, поддерживает ли терминал 256 цветов. Команда `tput colors` по идее должна показывать количество возможных цветов в терминале, но её вывод зависит от переменной окружения $TERM и, даже если терминал поддерживает 256-цветную палитру, но значение переменной $TERM не подразумевает этого, `tput colors` вернет число меньше 256. В этом случае можно добавить к значению переменной $TERM '-256color', например, с помощью таких строк в ~/.bashrc:
+```
+if [[ "$TERM" =~ "term" ]]; then
+    export TERM="xterm-256color"
+fi
+```
+или прописав в ~/.vimrc:
+```
+set t_Co=256
+```
+Убедиться, что терминал поддерживает 256 цветов можно с помощью специальных тестовых скриптов, коих много в интернете, например [show-all-256-colors.py][] или [terminalcolors.py][].
+
+[show-all-256-colors.py]: https://gist.github.com/mgedmin/2762225
+[terminalcolors.py]: https://raw.githubusercontent.com/incitat/eran-dotfiles/master/bin/terminalcolors.py
 
 Скриншоты
 ---------
