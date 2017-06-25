@@ -1,7 +1,8 @@
 " Author:   Andrey Bartashevitch <wind29121982@gmail.com>
 " URL:      Что-то на github
 " License:  MIT
-" Last Change: ?
+" Last Change: 2017-06-25
+" Version: 1.1
 " Descrition: Uniform contrast vim light/dark color scheme for gui and
 "             256 color terminals
 
