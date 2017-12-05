@@ -1,14 +1,20 @@
 " Author:   Andrey Bartashevitch <wind29121982@gmail.com>
-" URL:      Что-то на github
+" URL:      https://github.com/andbar-ru/vim-unicon
 " License:  MIT
-" Last Change: 2017-06-25
-" Version: 1.1
+" Last Change: 2017-12-05
+" Version: 1.2
 " Descrition: Uniform contrast vim light/dark color scheme for gui and
-"             256 color terminals
+"             256-color and true-color terminals
 
 " Initialization: {{{
 " ---------------------------------------------------------------------
-if !has('gui_running') && &t_Co != 256
+if has('gui_running') || (has('termguicolors') && &termguicolors)
+    let s:true_color = 1
+else
+    let s:true_color = 0
+endif
+
+if !s:true_color && &t_Co < 256
     finish
 endif
 
@@ -16,17 +22,9 @@ hi clear
 if exists("syntax_on")
     syntax reset
 endif
-
 let g:colors_name = "unicon"
 
 " }}}
-
-" GUI & term256 palettes: "{{{
-if has("gui_running")
-    let s:vmode        = "gui"
-else
-    let s:vmode        = "cterm"
-endif
 
 let s:none = {'gui': 'NONE', 'cterm': 'NONE'}
 
@@ -85,9 +83,12 @@ function! s:HL(group, fg, ...)
     endif
 
     let histring = ['hi', a:group]
-    call add(histring, s:vmode.'fg=' . fg[s:vmode])
-    call add(histring, s:vmode.'bg=' . bg[s:vmode])
-    call add(histring, s:vmode.'=' . format)
+    call add(histring, 'guifg=' . fg['gui'])
+    call add(histring, 'ctermfg=' . fg['cterm'])
+    call add(histring, 'guibg=' . bg['gui'])
+    call add(histring, 'ctermbg=' . bg['cterm'])
+    call add(histring, 'gui=' . format)
+    call add(histring, 'cterm=' . format)
     if a:0 >= 3
         call add(histring, 'guisp=' . a:3['gui'])
     endif
@@ -163,7 +164,7 @@ call s:HL('MatchParen', s:base7, s:base3, 'bold')
 
 "}}}
 " Reread colorscheme when vim is transferring from terminal to gui mode.
-autocmd GUIEnter * if (s:vmode != "gui") | exe "colorscheme " . g:colors_name | endif
+autocmd GUIEnter * if !has('gui_running') | exe "colorscheme " . g:colors_name | endif
 
 " License: "{{{
 "
