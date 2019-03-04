@@ -14,6 +14,7 @@ Differences from solarized:
 * accent colours have actually the same contrast to background;
 * different set of accent colours for light and dark variants of colorscheme;
 * highlighting of syntax groups is different;
+* Extra colors for diff mode;
 * There are not language- and plugin-specific syntax for now.
 
 [solarized]: https://github.com/altercation/vim-colors-solarized
@@ -51,7 +52,7 @@ set termguicolors
 Screenshots
 -----------
 **Light**
-![unicon_light](https://cloud.githubusercontent.com/assets/21138800/18610934/2a6c690a-7d3b-11e6-9385-78f13b550082.png)
+![unicon-light](https://user-images.githubusercontent.com/21138800/53729906-84247680-3e87-11e9-846d-b460bcd643c7.png)
 
 **Dark**
-![unicon_dark](https://cloud.githubusercontent.com/assets/21138800/18610936/36dba732-7d3b-11e6-97f8-c1a5d7a67a79.png)
+![unicon-dark](https://user-images.githubusercontent.com/21138800/53729926-8edf0b80-3e87-11e9-82de-f2c35043b737.png)
