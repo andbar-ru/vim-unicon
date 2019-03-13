@@ -34,7 +34,7 @@ Installation
    You can toggle between light and dark variants using commands:
    ```
    :set background=light
-   :set background-dark
+   :set background=dark
    ```
 
 [vim-plug]: https://github.com/junegunn/vim-plug
