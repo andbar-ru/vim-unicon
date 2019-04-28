@@ -52,7 +52,7 @@ set termguicolors
 Screenshots
 -----------
 **Light**
-![unicon-light](https://user-images.githubusercontent.com/21138800/53730703-cc449880-3e89-11e9-8ba9-98bc2cccc3e5.png)
+![unicon-light](https://user-images.githubusercontent.com/21138800/56861204-6e26c400-69a7-11e9-97fd-7ee45449faed.png)
 
 **Dark**
-![unicon-dark](https://user-images.githubusercontent.com/21138800/53730717-d23a7980-3e89-11e9-8f68-90e9fae92002.png)
+![unicon-dark](https://user-images.githubusercontent.com/21138800/56861207-741ca500-69a7-11e9-8ea2-a1658b14124f.png)
