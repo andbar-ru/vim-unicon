@@ -2,7 +2,7 @@
 " URL:      https://github.com/andbar-ru/vim-unicon
 " License:  MIT
 " Last Change: 2017-12-05
-" Version: 1.3
+" Version: 2.2.0
 " Descrition: Uniform contrast vim light/dark color scheme for gui and
 "             256-color and true-color terminals
 
